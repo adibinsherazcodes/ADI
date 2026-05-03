@@ -100,7 +100,7 @@ export default function Hero() {
               className="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover/cta2:opacity-100 transition-opacity duration-300 -z-10"
               aria-hidden
             />
-            <span className="relative z-10">Reach out... ↗</span>
+            <span className="relative z-10">Hire the Agency</span>
           </a>
         </div>
       </div>

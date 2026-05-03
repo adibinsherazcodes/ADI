@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Stats from './components/Stats'
 import Footer from './components/Footer'
 
+import AgencyServices from './components/AgencyServices'
 import ContactSection from './components/ContactSection'
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
             <main>
               <Hero />
               <Stats />
+              <AgencyServices />
               <ContactSection />
             </main>
             <Footer />
