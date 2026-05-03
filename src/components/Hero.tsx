@@ -39,7 +39,7 @@ export default function Hero() {
     <section id="home" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       {/* HLS Video Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <HlsVideo />
+        <HlsVideo className="mt-24 md:mt-32 scale-[1.15]" />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
         {/* Bottom fade */}
@@ -76,7 +76,7 @@ export default function Hero() {
               {roles[roleIndex]}
             </motion.span>
           </AnimatePresence>{' '}
-          based in Islamabad.
+          based in Pakistan.
         </p>
 
         {/* Description */}
@@ -100,7 +100,7 @@ export default function Hero() {
 
           {/* Reach out */}
           <a
-            href="mailto:adi.binsheraz@gmail.com"
+            href="#contact"
             className="relative group/cta2 rounded-full text-sm px-7 py-3.5 font-body border-2 border-stroke bg-bg text-text-primary hover:border-transparent transition-all duration-300 hover:scale-105"
           >
             <span

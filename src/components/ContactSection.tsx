@@ -98,7 +98,6 @@ export default function ContactSection() {
                 <div className="flex gap-6">
                   <a href="https://github.com/adibinsheraz-ctrl" target="_blank" rel="noreferrer" className="text-text-primary hover:text-muted transition-colors duration-200 font-body">GitHub</a>
                   <a href="#" className="text-text-primary hover:text-muted transition-colors duration-200 font-body">LinkedIn</a>
-                  <a href="#" className="text-text-primary hover:text-muted transition-colors duration-200 font-body">Twitter</a>
                 </div>
               </div>
             </div>

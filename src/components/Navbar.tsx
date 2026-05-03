@@ -29,7 +29,7 @@ export default function Navbar() {
         className={`inline-flex items-center rounded-full backdrop-blur-md border border-white/10 bg-surface/80 px-2 py-2 transition-all duration-300 ${scrolled ? 'shadow-md shadow-black/40' : ''}`}
       >
         {/* Logo */}
-        <div className="relative group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+        <div className="hidden sm:block relative group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           {/* Gradient ring */}
           <div className="w-9 h-9 rounded-full accent-gradient p-[2px] transition-all duration-300 group-hover:scale-110">
             <div className="w-full h-full rounded-full bg-bg flex items-center justify-center">
@@ -64,8 +64,8 @@ export default function Navbar() {
 
         {/* Say hi button */}
         <a
-          href="mailto:adi.binsheraz@gmail.com"
-          className="relative group/btn text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-text-primary font-body"
+          href="#contact"
+          className="hidden sm:flex relative group/btn text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-text-primary font-body"
         >
           {/* Gradient border on hover */}
           <span

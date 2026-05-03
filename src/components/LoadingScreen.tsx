@@ -15,29 +15,48 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const rafId = useRef<number>(0)
 
   useEffect(() => {
-    const duration = 2700
+    let assetsLoaded = false;
+
+    Promise.all([
+      new Promise(resolve => {
+        if (document.readyState === 'complete') resolve(true);
+        else window.addEventListener('load', resolve);
+      }),
+      document.fonts ? document.fonts.ready : Promise.resolve()
+    ]).then(() => {
+      assetsLoaded = true;
+    });
+
+    const duration = 2000;
 
     const tick = (timestamp: number) => {
-      if (!startTime.current) startTime.current = timestamp
-      const elapsed = timestamp - startTime.current
-      const progress = Math.min(elapsed / duration, 1)
-      const current = Math.floor(progress * 100)
-      setCount(current)
+      if (!startTime.current) startTime.current = timestamp;
+      const elapsed = timestamp - startTime.current;
+      
+      let progress = elapsed / duration;
+      let current = Math.floor(progress * 100);
 
-      if (progress < 1) {
-        rafId.current = requestAnimationFrame(tick)
-      } else {
-        setCount(100)
-        setTimeout(() => {
-          setVisible(false)
-          setTimeout(onComplete, 400)
-        }, 400)
+      if (!assetsLoaded && current >= 99) {
+        current = 99;
+      } else if (assetsLoaded && current >= 100) {
+        current = 100;
       }
-    }
 
-    rafId.current = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(rafId.current)
-  }, [onComplete])
+      setCount(Math.min(current, 100));
+
+      if (current < 100) {
+        rafId.current = requestAnimationFrame(tick);
+      } else {
+        setTimeout(() => {
+          setVisible(false);
+          setTimeout(onComplete, 400);
+        }, 400);
+      }
+    };
+
+    rafId.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId.current);
+  }, [onComplete]);
 
   useEffect(() => {
     const interval = setInterval(() => {

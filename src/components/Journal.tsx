@@ -12,12 +12,12 @@ const entries = [
   },
   {
     id: 2,
-    title: 'Building Alpha Academy with Resend API',
-    description: 'Creating a professional educational website with real-time form validation, email automation, and Pakistan timezone support.',
+    title: 'Adi Agency — Building an Official Presence',
+    description: 'Designing and developing a premium portfolio and agency site for my freelance work.',
     image: '/alpha-academy.png',
     readTime: '4 min read',
     date: 'Jan 2024',
-    url: 'https://github.com/adibinsheraz-ctrl/AlphaAcademy',
+    url: 'https://adiagency.netlify.app',
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const entries = [
     image: '/arkanoid.png',
     readTime: '6 min read',
     date: 'Nov 2023',
-    url: 'https://github.com/adibinsheraz-ctrl/Arkanoid',
+    url: 'https://adiagency.netlify.app',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const entries = [
     image: '/js-trainer.png',
     readTime: '3 min read',
     date: 'Sep 2023',
-    url: 'https://github.com/adibinsheraz-ctrl/JS-Trainer',
+    url: 'https://adiagency.netlify.app',
   },
 ]
 

@@ -50,11 +50,11 @@ export default function Footer() {
               Let's build<br />something great.
             </h2>
             <a
-              href="mailto:adi.binsheraz@gmail.com"
+              href="#contact"
               className="relative group/email inline-flex items-center gap-2 rounded-full text-sm md:text-base px-8 py-4 font-body text-text-primary border border-stroke hover:border-transparent transition-all duration-300 hover:scale-105"
             >
               <span className="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover/email:opacity-100 transition-opacity duration-300 -z-10" />
-              <span className="relative z-10">adi.binsheraz@gmail.com ↗</span>
+              <span className="relative z-10">Message me ↗</span>
             </a>
           </motion.div>
         </div>
@@ -77,7 +77,7 @@ export default function Footer() {
           {/* Left */}
           <div>
             <p className="font-display italic text-lg text-text-primary">Adi Bin Sheraz</p>
-            <p className="text-xs text-muted font-body mt-0.5">Full Stack Developer · Founder of Adi Agency</p>
+            <p className="text-xs text-muted font-body mt-0.5">Full Stack Developer · Founder of <a href="https://adiagency.netlify.app" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary underline transition-colors">Adi Agency</a></p>
           </div>
 
           {/* Center badge */}
