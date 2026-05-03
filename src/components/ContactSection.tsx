@@ -20,11 +20,39 @@ export default function ContactSection() {
     setStatus('submitting')
 
     try {
-      const { error } = await supabase
-        .from('messages') // Assumes a 'messages' table exists in Supabase
+      // 1. Save to Supabase
+      const { error: supabaseError } = await supabase
+        .from('messages')
         .insert([formData])
 
-      if (error) throw error
+      if (supabaseError) {
+        console.error("Supabase error:", supabaseError);
+        // We continue even if Supabase fails, to ensure they get the email
+      }
+
+      // 2. Send Email via Web3Forms
+      const web3formsKey = import.meta.env.VITE_WEB3FORMS_KEY || 'ab29c45e-f7a7-4a17-a0dc-e94b271b9f5b' // Fallback to hardcoded key to prevent crashes on Netlify if env var is missing
+      
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: web3formsKey,
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `New Portfolio Message from ${formData.name}`,
+          from_name: "Adi Portfolio",
+        }),
+      });
+
+      const result = await response.json();
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send email");
+      }
 
       setStatus('success')
       setFormData({ name: '', email: '', message: '' })
