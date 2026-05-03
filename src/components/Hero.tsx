@@ -51,7 +51,7 @@ export default function Hero() {
         {/* Name */}
         <h1
           ref={nameRef}
-          className="name-reveal text-6xl md:text-8xl lg:text-9xl font-display italic leading-[0.9] tracking-tight text-[#4169E1] mb-6 opacity-0"
+          className="name-reveal text-6xl md:text-8xl lg:text-9xl font-display italic leading-[0.9] tracking-tight text-text-primary mb-6 opacity-0"
         >
           Adi Bin Sheraz
         </h1>
@@ -93,7 +93,9 @@ export default function Hero() {
 
           {/* Reach out */}
           <a
-            href="#contact"
+            href="https://adiagency.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative group/cta2 rounded-full text-sm px-7 py-3.5 font-body border-2 border-stroke bg-bg text-text-primary hover:border-transparent transition-all duration-300 hover:scale-105"
           >
             <span

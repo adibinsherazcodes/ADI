@@ -76,7 +76,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-4 border-t border-stroke">
           {/* Left */}
           <div>
-            <p className="font-display italic text-lg text-[#4169E1]">Adi Bin Sheraz</p>
+            <p className="font-display italic text-lg text-text-primary">Adi Bin Sheraz</p>
             <p className="text-xs text-muted font-body mt-0.5">Full Stack Developer · Founder of <a href="https://adiagency.netlify.app" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary underline transition-colors">Adi Agency</a></p>
           </div>
 

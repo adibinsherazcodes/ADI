@@ -61,7 +61,9 @@ export default function Navbar() {
         <div className="hidden sm:block w-px h-5 bg-stroke mx-2" />
 
         <a
-          href="#agency"
+          href="https://adiagency.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex relative group/btn text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-text-primary font-body"
         >
           {/* Gradient border on hover */}
