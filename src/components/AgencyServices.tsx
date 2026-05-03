@@ -4,22 +4,18 @@ const services = [
   {
     title: 'Custom Web Solutions',
     description: 'Developing high-performance, scalable web applications tailored to your business needs.',
-    icon: '🌐',
   },
   {
     title: 'UI/UX Design',
     description: 'Creating intuitive, visually stunning interfaces that provide exceptional user experiences.',
-    icon: '🎨',
   },
   {
     title: 'E-commerce Mastery',
     description: 'Building robust online stores that drive conversions and streamline customer journeys.',
-    icon: '🛍️',
   },
   {
     title: 'Brand Strategy',
     description: 'Defining and elevating your brand identity to stand out in a competitive digital landscape.',
-    icon: '🚀',
   },
 ]
 
@@ -70,9 +66,7 @@ export default function AgencyServices() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative p-8 md:p-10 rounded-3xl border border-stroke bg-surface/30 hover:bg-surface transition-all duration-500 hover:scale-[1.02]"
             >
-              <div className="absolute top-0 right-0 p-8 text-4xl opacity-10 group-hover:opacity-20 transition-opacity">
-                {service.icon}
-              </div>
+              {/* Icon removed */}
               <h3 className="text-2xl font-display text-text-primary mb-4 group-hover:text-[#4169E1] transition-colors">
                 {service.title}
               </h3>
@@ -105,7 +99,9 @@ export default function AgencyServices() {
             Ready to scale your <em className="italic">digital presence?</em>
           </h3>
           <a
-            href="#contact"
+            href="https://adiagency.netlify.app#pricing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="relative inline-flex group/btn2 px-10 py-4 rounded-full bg-text-primary text-bg font-body font-medium transition-all duration-300 hover:scale-105 overflow-hidden"
           >
              <span
