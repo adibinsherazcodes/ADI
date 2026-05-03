@@ -54,7 +54,7 @@ export default function Footer() {
               className="relative group/email inline-flex items-center gap-2 rounded-full text-sm md:text-base px-8 py-4 font-body text-text-primary border border-stroke hover:border-transparent transition-all duration-300 hover:scale-105"
             >
               <span className="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover/email:opacity-100 transition-opacity duration-300 -z-10" />
-              <span className="relative z-10">Message me ↗</span>
+              <span className="relative z-10">Message us ↗</span>
             </a>
           </motion.div>
         </div>
@@ -83,7 +83,7 @@ export default function Footer() {
           {/* Center badge */}
           <div className="flex items-center gap-2 rounded-full border border-stroke px-4 py-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-xs text-muted font-body">Available for projects</span>
+            <span className="text-xs text-muted font-body">Ready to collaborate</span>
           </div>
 
           {/* Right: social */}

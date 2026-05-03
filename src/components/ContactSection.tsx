@@ -80,10 +80,10 @@ export default function ContactSection() {
               <span className="text-xs text-muted uppercase tracking-[0.3em] font-body">Get in touch</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-display text-text-primary mb-8 italic">
-              Message <em className="text-muted">me</em>
+              Message <em className="text-muted">us</em>
             </h2>
             <p className="text-lg text-muted font-body leading-relaxed max-w-md mb-12">
-              Have a project in mind or just want to say hi? I'm always open to new opportunities and collaborations.
+              Have a business need in mind or just want to say hi? We're always open to new opportunities and collaborations.
             </p>
 
             <div className="space-y-6">
@@ -159,7 +159,7 @@ export default function ContactSection() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell me about your project..."
+                    placeholder="Tell us about your requirements..."
                     className="w-full bg-transparent border-b border-stroke py-3 px-0 text-text-primary placeholder:text-muted focus:outline-none focus:border-text-primary transition-colors duration-300 font-body resize-none"
                   />
                 </div>

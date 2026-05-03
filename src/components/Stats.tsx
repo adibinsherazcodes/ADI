@@ -13,19 +13,19 @@ const stats: StatItem[] = [
     value: 6,
     suffix: '+',
     label: 'Years Experience',
-    description: 'Shipping production-grade web applications professionally since 2019.',
+    description: 'Delivering premium digital solutions and high-performance applications since 2019.',
   },
   {
-    value: 85,
+    value: 50,
     suffix: '+',
-    label: 'Projects Delivered',
-    description: 'From SaaS platforms to educational tools — every project ships.',
+    label: 'Happy Clients',
+    description: 'Trusted by businesses globally to transform ideas into scalable reality.',
   },
   {
     value: 100,
     suffix: '%',
-    label: 'Remote Ready',
-    description: 'Open to full-time remote roles worldwide — available immediately.',
+    label: 'Global Reach',
+    description: 'Ready to partner with teams worldwide — available for immediate collaboration.',
   },
 ]
 

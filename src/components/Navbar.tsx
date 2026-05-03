@@ -3,8 +3,6 @@ import { motion } from 'framer-motion'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'Work', href: '#work' },
-  { label: 'Resume', href: '#resume' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -62,10 +60,9 @@ export default function Navbar() {
         {/* Divider */}
         <div className="hidden sm:block w-px h-5 bg-stroke mx-2" />
 
-        {/* Say hi button */}
         <a
           href="#contact"
-          className="hidden sm:flex relative group/btn text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-text-primary font-body"
+          className="flex relative group/btn text-xs sm:text-sm rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-text-primary font-body"
         >
           {/* Gradient border on hover */}
           <span
@@ -73,7 +70,7 @@ export default function Navbar() {
             aria-hidden
           />
           <span className="relative z-10 flex items-center gap-1 bg-surface rounded-full px-3 sm:px-4 py-1.5 sm:py-2 backdrop-blur-md -mx-3 sm:-mx-4 -my-1.5 sm:-my-2">
-            Say hi <span className="text-[10px]">↗</span>
+            Say Hi <span className="text-[10px]">↗</span>
           </span>
         </a>
       </div>

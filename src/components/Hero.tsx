@@ -39,7 +39,7 @@ export default function Hero() {
     <section id="home" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       {/* HLS Video Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <HlsVideo className="mt-24 md:mt-32 scale-[1.15]" />
+        <HlsVideo className="scale-[1.15]" />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
         {/* Bottom fade */}
@@ -48,15 +48,10 @@ export default function Hero() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        {/* Eyebrow */}
-        <p className="blur-in text-xs text-muted uppercase tracking-[0.3em] mb-8 font-body opacity-0">
-          COLLECTION '26
-        </p>
-
         {/* Name */}
         <h1
           ref={nameRef}
-          className="name-reveal text-6xl md:text-8xl lg:text-9xl font-display italic leading-[0.9] tracking-tight text-text-primary mb-6 opacity-0"
+          className="name-reveal text-6xl md:text-8xl lg:text-9xl font-display italic leading-[0.9] tracking-tight text-[#4169E1] mb-6 opacity-0"
         >
           Adi Bin Sheraz
         </h1>
@@ -79,23 +74,21 @@ export default function Hero() {
           based in Pakistan.
         </p>
 
-        {/* Description */}
         <p className="blur-in text-sm md:text-base text-muted max-w-md mx-auto mb-12 font-body opacity-0 leading-relaxed">
-          Building seamless digital experiences with 6+ years of expertise and 85+ projects delivered — from concept to launch.
+          Building premium digital solutions with 6+ years of expertise — from concept to launch.
         </p>
 
         {/* CTA Buttons */}
         <div className="blur-in flex items-center justify-center gap-4 flex-wrap opacity-0">
-          {/* See Works */}
           <a
-            href="#work"
+            href="#contact"
             className="relative group/cta rounded-full text-sm px-7 py-3.5 font-body transition-all duration-300 hover:scale-105 bg-text-primary text-bg hover:bg-bg hover:text-text-primary overflow-hidden"
           >
             <span
               className="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover/cta:opacity-100 transition-opacity duration-300 -z-10"
               aria-hidden
             />
-            <span className="relative z-10">See Works</span>
+            <span className="relative z-10">Get Started</span>
           </a>
 
           {/* Reach out */}
